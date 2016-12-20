@@ -1,0 +1,33 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	{# section 1 #}
+	{% include "partials/sections/_section1.html" %}
+	{# section 2 #}
+	{% include "partials/sections/_section2.html" %}
+	{# section 3 #}
+	{% include "partials/sections/_section3.html" %}
+	{# section 4 #}
+	{% include "partials/sections/_section4.html" %}
+	{# section 5 #}
+	{% include "partials/sections/_section5.html" %}
+	{# section 6 #}
+	{% include "partials/sections/_section6.html" %}
+
+	{# mixin example #}
+	{{mixins.icon('facebook')}}
+
+
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	{# end of example #}
+
+{% endblock %}
+<!-- <div></div> -->
