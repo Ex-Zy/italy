@@ -1,0 +1,102 @@
+.products
+	position: relative
+	padding-top: 120px
+	&__title
+		color: #fff
+		+f(evo, 36, 1, null)
+		text-transform: uppercase
+		max-width: 710px
+		display: block
+		margin: 0 auto
+		text-align: center
+	&__list
+		+clr
+		padding: 100px 0
+	&__item
+		float: left
+		width: 33.3333%
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+		position: relative
+		z-index: 1
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			height: 839px
+			z-index: -1
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			margin: auto
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			z-index: -1
+			left: 0
+			right: 0
+			height: 226px
+			top: 287px
+			margin: auto
+		&:nth-of-type(1)
+			&:before
+				background: url(../img/section3/product1__bg.png) no-repeat center
+				opacity: 0.2
+			&:after
+				background: url(../img/section3/product1__shadow.png) no-repeat center
+				opacity: 0.66
+		&:nth-of-type(2)
+			&:before
+				background: url(../img/section3/product2__bg.png) no-repeat center
+				opacity: 0.4
+			&:after
+				background: url(../img/section3/product2__shadow.png) no-repeat center
+		&:nth-of-type(3)
+			&:before
+				background: url(../img/section3/product3__bg.png) no-repeat center
+				opacity: 0.6
+			&:after
+				background: url(../img/section3/product3__shadow.png) no-repeat center
+	&__item-pic
+		height: 400px
+		background-repeat: no-repeat
+		background-position: center center
+	&__item-body
+		position: absolute
+		left: 0
+		right: 0
+		margin: auto
+		top: 330px
+	&__item-footer
+		margin-top: 90px
+	&__item-discount
+		display: inline-block
+		vertical-align: middle
+		+f(bebas-bold, 48, 1, null)
+		span
+			display: block
+			font-size: 100px
+			margin-top: -10px
+	&__item-price
+		+hide-text
+		display: inline-block
+		vertical-align: top
+	&__badge
+		max-width: 170px
+		width: 100%
+		padding: 16px
+		background-color: #ff4aff
+		border-radius: 10px
+		font-size: 24px
+		line-height: 1
+		color: #fff
+		position: absolute
+		left: 0
+		bottom: 100%
+		margin-bottom: -10px
+	&__total
+		font-size: 24px
+		margin-top: 10px

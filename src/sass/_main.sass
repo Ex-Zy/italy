@@ -6,23 +6,6 @@
 	overflow: hidden
 	text-transform: uppercase
 	color: #fff
-	&:after,
-	&:before
-		content: ''
-		display: block
-		position: absolute
-		bottom: -84px
-		width: 50%
-		height: 84px*2
-		background-color: #FFF 
-		z-index: 20
-		
-	&:before
-		left: 0
-		transform: skew(85deg)
-	&:after
-		right: 0
-		transform: skew(-85deg)
 	.inner
 		+clr
 		min-height: 1010px
@@ -35,6 +18,17 @@
 	vertical-align: bottom
 	width: 104px
 	height: 169px
+.price
+	+bebas-bold
+	color: white
+	text-transform: uppercase
+	line-height: 1
+	&__current
+		font-size: 120px
+		text-shadow: 7px 0 7px #ff4aff, -7px 0 7px #ff4aff, 0 7px 7px #ff4aff, 0 -7px 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 12px 18px rgba(0, 0, 0, 0.32)
+	&__text
+		font-size: 18px
+		text-shadow: 7px 0 7px #ff4aff, -7px 0 7px #ff4aff, 0 7px 7px #ff4aff, 0 -7px 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 12px 18px rgba(0, 0, 0, 0.32)
 .desc
 	+f(bebas-bold, 30, 1, null)
 	max-width: 94px
@@ -53,3 +47,27 @@
 .content
 	width: 475px
 	float: right
+.section2
+	background: url(../img/section2/bg-sec2.png) no-repeat center top
+	background-size: cover
+	overflow: hidden
+	margin-top: -84px
+	z-index: 10
+	.inner
+		min-height: 1095px
+		padding: 140px 15px
+		+clr
+.section3
+	background: url(../img/section3/bg-sec3.png) no-repeat center top
+	background-size: cover
+	overflow: hidden
+	margin-top: -120px
+	.inner
+		min-height: 1078px
+		padding-top: 120px
+.section4
+	background-color: #FFF
+	margin-top: -14px
+	.inner
+		min-height: 1236px
+		padding-top: 129px

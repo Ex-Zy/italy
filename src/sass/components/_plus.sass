@@ -1,0 +1,52 @@
+.plus
+	position: relative
+	width: 50%
+	float: left
+	&:before,
+	&:after
+		content: ''
+		display: block
+		position: absolute
+	&:before
+		width: 449px
+		height: 645px
+		right: 100%
+		margin-right: 5px
+		top: 57px
+		z-index: -1
+		background: url(../img/section2/drink.png) no-repeat center
+	&:after
+		z-index: -2
+		background: url(../img/section2/drink__shadow.png) no-repeat center
+		width: 878px
+		height: 297px
+		top: 530px
+		right: 100%
+		margin-right: -100px
+	&__item
+		position: relative
+		min-height: 140px
+		padding: 0 0 0 140px
+		margin-bottom: 20px
+	&__pic
+		width: 115px
+		height: 115px
+		position: absolute
+		border-radius: 50%
+		left: 0
+		top: 0
+		box-shadow: 0 7px 10px rgba(0, 0, 0, 0.27)
+		img
+			width: 100%
+			max-width: none
+	&__content
+		text-transform: uppercase
+		line-height: 1
+	&__title
+		color: #ff7200
+		font-size: 45px
+		margin-bottom: 14px
+	&__desc
+		color: #555
+		font-size: 24px
+		min-height: 72px 
