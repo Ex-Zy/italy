@@ -1,0 +1,62 @@
+[class^="btn"]
+	display: inline-block
+	vertical-align: top
+	text-align: center
+	text-transform: uppercase
+	cursor: pointer
+	text-decoration: none 
+.btn-primary
+	padding: 25px 139px
+	background-color: #ffd200
+	border-radius: 5px
+	box-shadow: 0 12px 18px rgba(0, 0, 0, 0.32)
+	text-decoration: none
+	position: relative
+	span
+		position: relative
+		z-index: 2
+		text-shadow: 0 2px 0 #ffff00
+		color: #514718
+		transition: color 0.3s
+		+f(evo, 36, null, null)
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 3px
+		right: 3px
+		bottom: 3px
+		left: 3px
+		margin: auto
+		border: 4px solid white
+		border-radius: 5px
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11)
+		opacity: 0
+		transition: opacity 0.3s
+	&:hover
+		span
+			color: #fff
+		&:after
+			opacity: 1
+.btn-secondary
+	padding: 7px 67px 
+	border: 5px solid #fff
+	border-radius: 33px
+	color: #fff
+	+bebas-bold
+	font-size: 30px
+	transition: background-color 0.3s
+	&:hover
+		background-color: #fcd000
+.btn
+	padding: 14px 126px 
+	background-color: #fff
+	border: 5px solid #ff7200
+	border-radius: 44px
+	color: #ff7200
+	+bebas-bold
+	font-size: 36px
+	transition: background-color 0.3s, color 0.3s
+	&:hover
+		background-color: #FF7200
+		color: #fafafc

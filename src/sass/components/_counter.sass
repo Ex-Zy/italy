@@ -1,0 +1,40 @@
+.counter
+	position: relative
+	font-size: 0
+	margin-bottom: 40px
+	&__pointer
+		padding: 21px
+		margin-right: 52px
+		display: inline-block
+		vertical-align: middle
+		text-align: center
+		border-top-left-radius: 15px
+		border-bottom-left-radius: 15px
+		background-color: #FF7200
+		text-transform: uppercase
+		color: #fff
+		position: relative
+		+f(bebas-reg, 24, 1, null)
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 100%
+			+arr(38, 66, #FF7200, r)
+.counter-list
+	display: inline-block
+	vertical-align: middle
+	&__item
+		text-align: center
+		color: #ff7200
+		+f(evo, 48, 1, null)
+		display: inline-block
+		vertical-align: top
+		width: 55px
+		height: 79px
+		line-height: 79px
+		background: url(../img/count.png) no-repeat center 
+		+ .counter-list__item
+			margin-left: 5px

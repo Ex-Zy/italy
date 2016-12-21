@@ -1,60 +1,33 @@
 .section
 	position: relative
 .section1
-	min-height: 1010px
-	text-align: left
 	background: url(../img/section1/bg-sec1.jpg) no-repeat top center
 	background-size: cover
+	overflow: hidden
+	text-transform: uppercase
+	color: #fff
+	&:after,
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		bottom: -84px
+		width: 50%
+		height: 84px*2
+		background-color: #FFF 
+		z-index: 20
+		
+	&:before
+		left: 0
+		transform: skew(85deg)
+	&:after
+		right: 0
+		transform: skew(-85deg)
 	.inner
 		+clr
-.side-left
-	float: left
-.side-right
-	overflow: hidden
-	position: relative
-	z-index: 20
-.top-product
-	position: relative
-	width: 716px
-	margin-left: -74px
-	&__girl
-		width: 590px
-		height: 999px
-		background: url(../img/section1/girl.png) no-repeat center
+		min-height: 1010px
 		position: relative
-		z-index: 2
-	&__item
-		position: absolute
-		left: 322px
-		top: 462px
 		z-index: 1
-		width: 289px
-		height: 485px
-		display: inline-block
-	&__body
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		background: url(../img/section1/product-main.png) no-repeat center
-		background-size: contain
-	&__head
-		width: 215px
-		text-transform: uppercase
-		color: #fff
-		position: absolute
-		left: 489px - 74px
-		top: 301px
-		z-index: 10
-	&__tail
-		width: 638px
-		height: 239px
-		background: url(../img/section1/product-main__tail.png) no-repeat center
-		top: -90px
-		left: -97px
-		position: absolute
-		z-index: -1
 .prices
 	background: url(../img/section1/pricing.png) no-repeat 50% 0%
 	+hide-text
@@ -72,56 +45,11 @@
 	position: absolute
 	width: 723px
 	height: 488px
-	left: 183px
+	left: 109px
 	bottom: -20px
 	background: url(../img/section1/product-main__shadow.png) no-repeat center
-.top-title
-	+hide-text
-	margin-bottom: 62px
-	img
-		width: 100%
-		max-width: none
-.brands
-	text-align: center
-	font-size: 0
-	margin: 44px 0 37px
-	&__item
-		display: inline-block
-		vertical-align: middle
-		padding: 0 2px
-.advantage
-	margin-bottom: 28px
-	&__item
-		+f(bebas-reg, 26, 1, null)
-		color: #fff
-		text-transform: uppercase
-		margin-bottom: 12px
-		padding-left: 60px
-		position: relative
-	i
-		position: absolute
-		top: 0
-		left: 0
-		background: url(../img/check.png) no-repeat center
-		width: 54px
-		height: 51px
-.pointer
-	padding: 21px
-	display: inline-block
-	text-align: center
-	border-top-left-radius: 15px
-	border-bottom-left-radius: 15px
-	background-color: #FF7200
-	font-size: 24px
-	text-transform: uppercase
-	color: #fff
-	position: absolute
-	line-height: 1
-	&:after
-		content: ''
-		display: block
-		position: absolute
-		top: 0
-		bottom: 0
-		left: 100%
-		+arr(38, 66, #FF7200, r)
+	opacity: 0.49
+	z-index: -1
+.content
+	width: 475px
+	float: right
