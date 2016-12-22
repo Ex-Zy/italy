@@ -1,0 +1,34 @@
+.form
+	width: 300px
+	display: inline-block
+	vertical-align: top
+	&__content
+		padding: 40px 32px
+		border-radius: 10px
+		border: 5px solid #fff
+		background-color: transparent
+		text-align: center
+		font-size: 30px
+		text-transform: uppercase
+		color: #fff
+	&__row
+		+ .form__row
+			margin-top: 14px
+	&__title
+		line-height: 1
+		margin-bottom: 32px
+	&__btn
+		width: 100%
+		padding: 16px 20px
+		margin-top: 11px
+.input
+	display: block
+	width: 100%
+	padding: 13px 17px 
+	border-radius: 10px
+	border: 2px solid #fff
+	background-color: transparent 
+	+f(bebas-reg, 24, 1, null)
+	text-transform: uppercase
+	color: #fff
+	+placeholder-color(#fff)

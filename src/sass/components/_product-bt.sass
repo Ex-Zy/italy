@@ -1,0 +1,53 @@
+.product-bt
+	position: relative
+	display: inline-block
+	vertical-align: top
+	margin-right: 63px
+	&__text
+		+f(bebas-bold, 30, 1, null)
+		color: #fff
+		max-width: 96px
+	&__text,
+	&__price-old,
+	&__price-current
+		display: inline-block
+		vertical-align: bottom
+		position: relative
+	&__price-current
+		+f(bebas-bold, 48, 1, null)
+		top: -30px
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			margin: auto
+			height: 0
+			border-bottom: 2px solid #fff
+	&__text
+		top: -35px
+	&__pic
+		position: relative
+		z-index: 1
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			z-index: -1
+			width: 961px
+			height: 197px
+			background: url(../img/section6/product-bt__shadow.png) no-repeat center
+			bottom: 0
+			left: -348px
+			right: -375px
+			margin-bottom: -98px
+	&__footer
+		position: absolute
+		right: 20px
+		bottom: 0
+		margin-bottom: -50px
+		width: 280px
+		z-index: 1

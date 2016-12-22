@@ -16,18 +16,18 @@ title: Index page
 	{% include "partials/sections/_section5.html" %}
 	{# section 6 #}
 	{% include "partials/sections/_section6.html" %}
+	
+	{# 
 
-	{# mixin example #}
 	{{mixins.icon('facebook')}}
 
-
-	{# data usage example #}
 		{% import "data/data.html" as tests %}
 		
 		{% for test in tests.list %}
 		<li>{{test.title}}</li>
 		{% endfor %}
-	{# end of example #}
+
+	#}
 
 {% endblock %}
 <!-- <div></div> -->

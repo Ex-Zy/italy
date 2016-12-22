@@ -1,0 +1,72 @@
+.comments
+	max-width: 1093px
+	margin: 0 auto
+	&__item
+		position: relative
+		clear: both
+	&__pic
+		position: absolute
+		width: 253px
+		height: 517px
+		top: 0
+		z-index: 1
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			z-index: -1
+			background: url(../img/section5/mobile__shadow.png) no-repeat center
+			width: 741px
+			height: 571px
+			opacity: 0.67
+		img
+			width: 100%
+			display: block
+	&__desc
+		position: relative
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 121px
+			height: 105px
+	&__title
+		color: #272727
+		+f(bebas-bold, 48, 1, null)
+		margin-bottom: 41px
+	&__desc
+		color: #fff
+		font-size: 26px
+	&__item_left
+		float: left
+		padding: 29px 20px 200px 295px
+		width: ((806 / 1093) * 100) * "1%" 
+		.comments__desc
+			&:before
+				background: url(../img/section5/arrow-title-left.png) no-repeat center
+				top: -35px
+				left: -24px
+		.comments__pic
+			left: 0
+			&:before
+				top: 227px
+				right: -237px
+				left: -251px
+	&__item_right
+		float: right
+		text-align: right
+		margin-top: -292px
+		width: ((798 / 1093) * 100) * "1%"
+		padding: 150px 276px 100px 49px
+		.comments__desc
+			text-align: left
+			&:before
+				background: url(../img/section5/arrow-title-right.png) no-repeat center
+				top: -41px
+				right: -13px
+		.comments__pic
+			right: 0
+			&:before
+				top: 216px
+				right: -253px
+				left: -235px 
