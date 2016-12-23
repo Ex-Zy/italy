@@ -3,4 +3,5 @@
 
 $(document).ready(function() {
 	//=include partial/parallax.js
+	//=include partial/scroll.js
 });

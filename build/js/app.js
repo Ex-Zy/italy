@@ -19,4 +19,14 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 $(document).ready(function() {
 	$('.js-parallax-1').jKit('parallax', { 'strength': '5', 'axis': 'y', 'detect': 'scroll' });
 	$('.js-parallax-2').jKit('parallax', { 'strength': '5', 'axis': 'y', 'detect': 'scroll' });
+	//btn-to
+	$('.js-btn-to').click(function(e) {
+		e.preventDefault();
+	
+		var section = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(section).offset().top + 100
+		}, 500);
+		return false;
+	});
 });
