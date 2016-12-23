@@ -2,11 +2,21 @@
 	position: relative
 	font-size: 0
 	margin-bottom: 40px
-	&__pointer
-		padding: 21px
-		margin-right: 52px
+	white-space: nowrap
+	&__col
 		display: inline-block
 		vertical-align: middle
+	&__col1
+		text-align: left
+		width: 55%
+	&__col2
+		text-align: right
+		width: 45%
+	&__pointer
+		max-width: 169px
+		width: 100%
+		padding: 21px 12px
+		margin-right: 52px
 		text-align: center
 		border-top-left-radius: 15px
 		border-bottom-left-radius: 15px
@@ -25,9 +35,9 @@
 			+arr(38, 66, #FF7200, r)
 		span
 			position: relative
+			z-index: 1
+			margin-right: -24px
 .counter-list
-	display: inline-block
-	vertical-align: middle
 	&__item
 		text-align: center
 		color: #ff7200

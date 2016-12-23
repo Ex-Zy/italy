@@ -1,15 +1,11 @@
 .section
 	position: relative
 .section1
-	background: url(../img/section1/bg-sec1.jpg) no-repeat top center
+	background: url(../img/section1/bg-sec1.jpg) no-repeat center
 	background-size: cover
 	overflow: hidden
-	text-transform: uppercase
-	color: #fff
 	.inner
-		+clr
 		min-height: 1010px
-		position: relative
 		z-index: 1
 .prices
 	background: url(../img/section1/pricing.png) no-repeat 50% 0%
@@ -47,12 +43,17 @@
 .content
 	width: 475px
 	float: right
+	&__body
+		max-width: 420px
+		padding-left: 15px
 .section2
 	background: url(../img/section2/bg-sec2.png) no-repeat center top
 	background-size: cover
 	overflow: hidden
 	margin-top: -84px
 	z-index: 10
+	+r(1100)
+		margin-top: -100px
 	.inner
 		min-height: 1095px
 		padding: 140px 15px
