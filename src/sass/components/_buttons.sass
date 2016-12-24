@@ -6,22 +6,23 @@
 	cursor: pointer
 	text-decoration: none 
 .btn-primary
-	padding: 21px
+	padding: 5.1% 7%
 	width: 100%
 	background-color: #ffd200
 	border: 4px solid #ffd200
 	border-radius: 5px
 	box-shadow: 0 12px 18px rgba(0, 0, 0, 0.32)
-	text-decoration: none
 	position: relative
 	transition: all 0.3s
+	+evo
 	span
 		position: relative
 		z-index: 2
 		text-shadow: 0 2px 0 #ffff00
 		color: #514718
 		transition: color 0.3s
-		+f(evo, 36, null, null)
+		// +f(evo, 36, null, null)
+		+fluid-font(26px, 36px, 900px, 1140px)
 	&:hover
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11)
 		border-color: #ffffff

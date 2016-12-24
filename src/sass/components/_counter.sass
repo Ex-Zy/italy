@@ -1,52 +1,57 @@
 .counter
-	position: relative
 	font-size: 0
 	margin-bottom: 40px
 	white-space: nowrap
+	text-align: center
 	&__col
 		display: inline-block
 		vertical-align: middle
 	&__col1
-		text-align: left
 		width: 55%
 	&__col2
 		text-align: right
 		width: 45%
 	&__pointer
-		max-width: 169px
-		width: 100%
-		padding: 21px 12px
-		margin-right: 52px
-		text-align: center
-		border-top-left-radius: 15px
-		border-bottom-left-radius: 15px
+		padding: 0.666em 0.5em 0.666em 0   // 16px, 12px
+		width: ((154 / 24) * "1em")  // (207 - 12 - 41)
+		margin-right: ((52 / 24) * "1em") 
 		background-color: #FF7200
-		text-transform: uppercase
-		color: #fff
 		position: relative
-		+f(bebas-reg, 24, 1, null)
+		+fluid-font(20px, 24px, 900px, 1170px, 24px)
+		margin-left: (12 / 24) * "1em" 
+		&:before
+			background: url(../img/section1/pointer1.png) no-repeat center
+			left: -(12 / 24) * "1em"			
+			width: (12 / 24) * "1em"
 		&:after
+			left: 100%
+			margin-left: -2px
+			background: url(../img/section1/pointer2.png) no-repeat center
+			width: (41 / 24) * "1em"
+		&:after,
+		&:before
 			content: ''
 			display: block
 			position: absolute
 			top: 0
 			bottom: 0
-			left: 100%
-			+arr(38, 66, #FF7200, r)
+			height: (65 / 24) * "1em"
+			margin: auto
+			background-size: contain			
 		span
 			position: relative
 			z-index: 1
-			margin-right: -24px
+			margin-right: -1em // (24 / 24)
 .counter-list
 	&__item
-		text-align: center
 		color: #ff7200
-		+f(evo, 48, 1, null)
+		+evo
+		+fluid-font(36px, 48px, 900px, 1170px, 48px)
 		display: inline-block
 		vertical-align: top
-		width: 55px
-		height: 79px
-		line-height: 79px
+		padding: 0 12px
+		line-height: (79 / 48)  
 		background: url(../img/count.png) no-repeat center 
+		background-size: contain
 		+ .counter-list__item
-			margin-left: 5px
+			margin-left: (5 / 182) * 100 * "1%"

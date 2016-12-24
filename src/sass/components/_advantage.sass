@@ -1,21 +1,22 @@
 .advantage
 	margin-bottom: 28px
 	&__item
-		+f(bebas-reg, 26, 1, null)
+		line-height: 1
 		color: #fff
-		text-transform: uppercase
-		margin-bottom: 12px
 		padding-left: 28px + 19px
 		position: relative
+		+fluid-font(22px, 26px, 900px, 1170px, 26px)
+		&:not(:last-of-type)
+			margin-bottom: 12px
 	&__icon
 		position: absolute
 		top: 0
 		left: 0
-		width: 28px
-		height: 27px
+		width:  ((28 / 405) * 100) * "1%" 
+		height: 100%
 		img
 			position: absolute
-			right: -13px
-			left: -13px
+			right: -((13 / 26) * 100) * "1%" 
+			left: -((13 / 26) * 100) * "1%" 
 			top: 0
-			margin: auto
+			width: 193%

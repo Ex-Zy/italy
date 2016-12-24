@@ -1,54 +1,56 @@
-.section
-	position: relative
 .section1
 	background: url(../img/section1/bg-sec1.jpg) no-repeat center
-	background-size: cover
 	overflow: hidden
 	.inner
-		min-height: 1010px
+		// min-height: 1010px
+		padding-top: 44px
+		padding-bottom: 194px
 		z-index: 1
+		position: relative
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: ((723 / 1170) * 100) * "1%" 
+			height: ((488 / 1170) * 100) * "1%" 
+			left: ((109 / 1170) * 100) * "1%" // 109px
+			bottom: ((-20 / 1170) * 100) * "1%" 
+			background: url(../img/section1/product-main__shadow.png) no-repeat center
+			opacity: 0.49
+			z-index: -1
 .prices
-	background: url(../img/section1/pricing.png) no-repeat 50% 0%
+	// background: url(../img/section1/pricing.png) no-repeat 50% 0%
+	// background-size: contain
 	+hide-text
 	display: inline-block
 	vertical-align: bottom
-	width: 104px
-	height: 169px
-.price
-	+bebas-bold
-	color: white
-	text-transform: uppercase
-	line-height: 1
-	&__current
-		font-size: 120px
-		text-shadow: 7px 0 7px #ff4aff, -7px 0 7px #ff4aff, 0 7px 7px #ff4aff, 0 -7px 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 12px 18px rgba(0, 0, 0, 0.32)
-	&__text
-		font-size: 18px
-		text-shadow: 7px 0 7px #ff4aff, -7px 0 7px #ff4aff, 0 7px 7px #ff4aff, 0 -7px 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 0 7px #ff4aff, 0 12px 18px rgba(0, 0, 0, 0.32)
+	// width: 104px
+	// height: 169px
+	width: (104 / 215) * 100 * "1%"
+	// height: (169 / 990) * 100 * "1%" 
+	bottom: -20px
+	position: relative
+	img
+		width: 100%
+		height: auto
+		display: block
 .desc
-	+f(bebas-bold, 30, 1, null)
-	max-width: 94px
+	// +f(bebas-bold, 30, 1, null)
+	+bebas-bold
+	+fluid-font(24px, 30px, 900px, 1140px, 30px)
+	line-height: 1
+	max-width: (94 / 215) * 100 * "1%"
 	display: inline-block
 	vertical-align: bottom
 	margin: 0 0 12px 10px
-.shadow
-	position: absolute
-	width: 723px
-	height: 488px
-	left: 109px
-	bottom: -20px
-	background: url(../img/section1/product-main__shadow.png) no-repeat center
-	opacity: 0.49
-	z-index: -1
 .content
-	width: 475px
+	width: ((475 / 1140) * 100) * "1%" 
 	float: right
 	&__body
 		max-width: 420px
 		padding-left: 15px
 .section2
 	background: url(../img/section2/bg-sec2.png) no-repeat center top
-	background-size: cover
 	overflow: hidden
 	margin-top: -84px
 	z-index: 10
@@ -90,3 +92,6 @@
 	background-size: cover
 	.inner
 		z-index: 1
+.section
+	position: relative
+	background-size: cover
