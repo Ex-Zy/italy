@@ -1,10 +1,10 @@
 .products
 	position: relative
 	padding-top: 120px
+	line-height: 1
 	&__title
-		color: #fff
-		+f(evo, 36, 1, null)
-		text-transform: uppercase
+		+evo
+		+fluid-font(32px, 36px, 900px, 1140px, 36px)
 		max-width: 710px
 		display: block
 		margin: 0 auto
@@ -16,21 +16,9 @@
 		float: left
 		width: 33.3333%
 		text-align: center
-		text-transform: uppercase
-		color: #fff
 		position: relative
 		z-index: 1
-		&:before
-			content: ''
-			display: block
-			position: absolute
-			height: 839px
-			z-index: -1
-			left: 0
-			right: 0
-			top: 0
-			bottom: 0
-			margin: auto
+		&:before,
 		&:after
 			content: ''
 			display: block
@@ -38,6 +26,10 @@
 			z-index: -1
 			left: 0
 			right: 0
+		&:before
+			height: 839px
+			margin: auto
+		&:after
 			height: 226px
 			top: 287px
 			margin: auto
@@ -61,42 +53,55 @@
 			&:after
 				background: url(../img/section3/product3__shadow.png) no-repeat center
 	&__item-pic
-		height: 400px
+		// height: 400px
 		background-repeat: no-repeat
 		background-position: center center
+		background-size: contain
+		&:before
+			content: ''
+			display: block
+			padding-top: (400 / 380) * 100 * "1%" 
 	&__item-body
 		position: absolute
 		left: 0
 		right: 0
 		margin: auto
 		top: 330px
+		font-size: 0
 	&__item-footer
 		margin-top: 90px
 	&__item-discount
 		display: inline-block
 		vertical-align: middle
-		+f(bebas-bold, 48, 1, null)
+		+bebas-bold
+		line-height: 1
+		+fluid-font(36px, 48px, 900px, 1140px, 48px) 
+		width: 50%
 		span
 			display: block
-			font-size: 100px
+			+fluid-font(76px, 100px, 900px, 1140px) 
 			margin-top: -10px
 	&__item-price
 		+hide-text
 		display: inline-block
 		vertical-align: top
+		width: 50%
+		+clr
+		img
+			width: auto
+			max-width: 100%
+			float: right
 	&__badge
 		max-width: 170px
 		width: 100%
 		padding: 16px
 		background-color: #ff4aff
 		border-radius: 10px
-		font-size: 24px
-		line-height: 1
-		color: #fff
+		+fluid-font(20px, 24px, 900px, 1140px, 24px)
 		position: absolute
 		left: 0
 		bottom: 100%
 		margin-bottom: -10px
 	&__total
-		font-size: 24px
+		+fluid-font(20px, 24px, 900px, 1140px, 24px)
 		margin-top: 10px
