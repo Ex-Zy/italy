@@ -2,7 +2,6 @@
 	display: inline-block
 	vertical-align: top
 	text-align: center
-	// text-transform: uppercase
 	cursor: pointer
 	text-decoration: none 
 .btn-primary
@@ -21,7 +20,7 @@
 		text-shadow: 0 2px 0 #ffff00
 		color: #514718
 		transition: color 0.3s
-		+fluid-font(26px, 36px, 900px, 1140px)
+		+fluid-font(26px, 36px, 900px, 1140px, 36px)
 	&:hover
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11)
 		border-color: #ffffff
@@ -30,12 +29,13 @@
 			color: #fff
 			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.11)
 .btn-secondary
-	padding: 7px 67px 
+	padding: 7px 67px
+	line-height: 1.37
 	border: 5px solid #fff
 	border-radius: 33px
 	color: #fff
 	+bebas-bold
-	font-size: 30px
+	+fluid-font(24px, 30px, 900px, 1140px, 30px)
 	transition: background-color 0.3s, border-color 0.3s
 	&:hover
 		background-color: #fcd000
@@ -47,7 +47,7 @@
 	border-radius: 44px
 	color: #ff7200
 	+bebas-bold
-	font-size: 36px
+	+fluid-font(26px, 36px, 900px, 1140px, 36px)
 	transition: background-color 0.3s, color 0.3s
 	&:hover
 		background-color: #FF7200

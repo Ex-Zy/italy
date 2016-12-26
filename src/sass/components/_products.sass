@@ -5,6 +5,7 @@
 	&__title
 		+evo
 		+fluid-font(32px, 36px, 900px, 1140px, 36px)
+		line-height: 1.4
 		max-width: 710px
 		display: block
 		margin: 0 auto
@@ -29,6 +30,8 @@
 		&:before
 			height: 839px
 			margin: auto
+			top: 0
+			bottom: 0
 		&:after
 			height: 226px
 			top: 287px
@@ -53,10 +56,10 @@
 			&:after
 				background: url(../img/section3/product3__shadow.png) no-repeat center
 	&__item-pic
-		// height: 400px
 		background-repeat: no-repeat
 		background-position: center center
 		background-size: contain
+		position: relative
 		&:before
 			content: ''
 			display: block
@@ -65,8 +68,8 @@
 		position: absolute
 		left: 0
 		right: 0
-		margin: auto
-		top: 330px
+		bottom: 0
+		margin: 0 auto -26.31578947368421% // 100 / 380
 		font-size: 0
 	&__item-footer
 		margin-top: 90px

@@ -4,17 +4,12 @@ title: Index page
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	{# section 1 #}
-	{% include "partials/sections/_section1.html" %}
-	{# section 2 #}
-	{% include "partials/sections/_section2.html" %}
-	{# section 3 #}
-	{% include "partials/sections/_section3.html" %}
-	{# section 4 #}
-	{% include "partials/sections/_section4.html" %}
-	{# section 5 #}
-	{% include "partials/sections/_section5.html" %}
-	{# section 6 #}
-	{% include "partials/sections/_section6.html" %}
+	<div style="display: flex; margin: auto; flex-direction: column; align-items: center; justify-content: space-around; height: 100vh;">
+		<ul style="font: bold italic 60px Arial, Helvetica, sans-serif;">
+			<li><a href="italy.html" style="text-decoration: none; color: #5f5959; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 1px 0 1px rgba(0, 0, 0, 0.6), 0 -1px 1px rgba(0, 0, 0, 0.6), -1px 0 2px rgba(0, 0, 0, 0.6)">Italy.html</a></li>
+			<li><a href="spain.html" style="text-decoration: none; color: #5f5959; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 1px 0 1px rgba(0, 0, 0, 0.6), 0 -1px 1px rgba(0, 0, 0, 0.6), -1px 0 2px rgba(0, 0, 0, 0.6)">Spain.html</a></li>
+		</ul>
+		<h5 style="font: bold italic 24px Arial, Helvetica, sans-serif; color: #5f5959; text-transform: lowercase">Developed by Ex-Zy</h5>
+	</div>
 {% endblock %}
 <!-- <div></div> -->

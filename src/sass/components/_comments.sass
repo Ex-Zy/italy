@@ -1,13 +1,13 @@
 .comments
 	max-width: 1093px
 	margin: 0 auto
+	+clr
 	&__item
 		position: relative
 		clear: both
 	&__pic
 		position: absolute
-		width: 253px
-		height: 517px
+		max-width: 253px
 		top: 0
 		z-index: 1
 		&:before
@@ -16,12 +16,16 @@
 			position: absolute
 			z-index: -1
 			background: url(../img/section5/mobile__shadow.png) no-repeat center
-			width: 741px
-			height: 571px
+			width: (741 / 253) * 100 * "1%"
+			padding-top:  (571 / 253) * 100 * "1%"
 			opacity: 0.67
+		&:after
+			content: ''
+			display: block
 		img
 			width: 100%
 			display: block
+			position: absolute
 	&__desc
 		position: relative
 		&:before
@@ -32,15 +36,20 @@
 			height: 105px
 	&__title
 		color: #272727
-		+f(bebas-bold, 48, 1, null)
+		+bebas-bold
+		line-height: 1
+		+fluid-font(36px, 48px, 900px, 1140px, 48px)
 		margin-bottom: 41px
 	&__desc
 		color: #fff
-		font-size: 26px
+		+fluid-font(22px, 26px, 900px, 1140px, 26px)
 	&__item_left
 		float: left
-		padding: 29px 20px 200px 295px
-		width: ((806 / 1093) * 100) * "1%" 
+		padding-top: 29px
+		padding-right: 20px
+		padding-bottom: 200px
+		padding-left: ((295 / 1093) * 100) * "1%" 
+		width: ((806 / 1093) * 100) * "1%"
 		.comments__desc
 			&:before
 				background: url(../img/section5/arrow-title-left.png) no-repeat center
@@ -48,16 +57,22 @@
 				left: -24px
 		.comments__pic
 			left: 0
+			width: ((253 / 806) * 100) * "1%"
 			&:before
-				top: 227px
-				right: -237px
-				left: -251px
+				top: (227 / 516) * 100 * "1%" 
+				right: (-237 / 253) * 100 * "1%"  
+				left: (-251 / 253) * 100 * "1%"  
+			&:after
+				padding-top: ((517 / 253) * 100) * "1%" 
 	&__item_right
 		float: right
 		text-align: right
 		margin-top: -292px
 		width: ((798 / 1093) * 100) * "1%"
-		padding: 150px 276px 100px 49px
+		padding-top: 150px
+		padding-right: ((276 / 1093) * 100) * "1%"
+		padding-bottom: 100px
+		padding-left: 49px
 		.comments__desc
 			text-align: left
 			&:before
@@ -66,7 +81,10 @@
 				right: -13px
 		.comments__pic
 			right: 0
+			width: ((253 / 798) * 100) * "1%"
 			&:before
-				top: 216px
-				right: -253px
-				left: -235px 
+				top: (216 / 516) * 100 * "1%" 
+				right: (-253 / 253) * 100 * "1%"  
+				left: (-235 / 253) * 100 * "1%" 
+			&:after
+				padding-top: ((517 / 253) * 100) * "1%" 

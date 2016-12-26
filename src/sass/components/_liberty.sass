@@ -20,24 +20,37 @@
 		width: 50%
 		min-height: 130px
 		margin-bottom: 55px
-		padding-left: 156px
+		// padding-left: 156px
+		padding-left: 26px
 		position: relative
 	&__pic
-		position: absolute
-		top: 0
-		left: 0
-		width: 130px
-		height: 130px
+		float: left
+		width: 26.74897119341564%
+		min-width: 115px
 		overflow: hidden
+		position: relative
+		&:after
+			content: ''
+			display: block
+			padding-top: 100%
+		img
+			max-width: 100%
+			width: auto
+			top: 50%
+			left: 50%
+			margin-top: -50%
+			margin-left: -50%
+			position: absolute
 	&__content
 		color: #2e2e2e
-		font-size: 30px
+		+fluid-font(24px, 30px, 900px, 1140px, 30px)
 		line-height: 1.2
-		padding: 10px 0
+		padding: 10px 0 10px 5.349794238683128%
 		letter-spacing: -0.01em
+		overflow: hidden
 	&__desc
 		color: #959595
-		font-size: 26px
+		+fluid-font(22px, 26px, 900px, 1140px, 26px)
 		text-align: center
 	.btn
 		display: table
