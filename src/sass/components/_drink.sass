@@ -2,17 +2,33 @@
 	position: relative
 	width: 50%
 	float: left
+	+r(900)
+		float: none
+		width: 100%
+		margin-bottom: 20px
 	&__top
 		+evo
 		padding-right: 30px
+		+r(900)
+			padding-right: 0
+			text-align: center
 	&__top-small
 		color: #303030
 		font-size: 24px
 		+fluid-font(20px, 24px, 900px, 1170px, 24px)
 		line-height: (61 / 24)
 		letter-spacing: -0.01em
+		+r(900)
+			font-size: 30px
+			line-height: 1.5
+		+r(500)
+			font-size: 26px
 	&__top-big
 		+fluid-font(74px, 90px, 900px, 1170px, 90px)
 		color: #ff7200
 		line-height: (103 / 90)
 		letter-spacing: -0.01em
+		+r(900)
+			font-size: 60px
+		+r(500)
+			font-size: 36px
