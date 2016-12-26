@@ -3,31 +3,57 @@
 	margin-bottom: 40px
 	white-space: nowrap
 	text-align: center
+	+r(500)
+		white-space: normal
+		margin-bottom: 0
 	&__col
 		display: inline-block
 		vertical-align: middle
 	&__col1
 		width: 55%
+		+r(500)
+			width: 100%
 	&__col2
 		text-align: right
 		width: 45%
+		+r(500)
+			width: 100%
+			text-align: center
+			margin-top: 30px
 	&__pointer
-		padding: 0.666em 0.5em 0.666em 0   // 16px, 12px
-		width: ((154 / 24) * "1em")  // (207 - 12 - 41)
-		margin-right: ((52 / 24) * "1em") 
 		background-color: #FF7200
 		position: relative
-		+fluid-font(20px, 24px, 900px, 1170px, 24px)
-		margin-left: (12 / 24) * "1em" 
+		+rmin(901)
+			padding: 0.666em 0.5em 0.666em 0   // 16px, 12px
+			width: ((154 / 24) * "1em")  // (207 - 12 - 41)
+			margin-right: ((52 / 24) * "1em")
+			margin-left: (12 / 24) * "1em"
+			+fluid-font(20px, 24px, 900px, 1170px, 24px)
+		+r(900)
+			font-size: 30px
+			margin-left: 12px
+			margin-right: 52px
+			padding: 12px 0
+		+r(500)
+			margin: 0
 		&:before
 			background: url(../img/section1/pointer1.png) no-repeat center
 			left: -(12 / 24) * "1em"			
 			width: (12 / 24) * "1em"
+			+r(900)
+				left: -12px
+				width: 12px
+			+r(500)
+				display: none
 		&:after
 			left: 100%
 			margin-left: -2px
 			background: url(../img/section1/pointer2.png) no-repeat center
 			width: (41 / 24) * "1em"
+			+r(900)
+				width: 41px
+			+r(500)
+				display: none
 		&:after,
 		&:before
 			content: ''
@@ -37,11 +63,14 @@
 			bottom: 0
 			height: (65 / 24) * "1em"
 			margin: auto
-			background-size: contain			
+			background-size: contain	
+			+r(900)
+				height: 65px		
 		span
 			position: relative
 			z-index: 1
-			margin-right: -1em // (24 / 24)
+			+rmin(901)
+				margin-right: -1em // (24 / 24)
 .counter-list
 	&__item
 		color: #ff7200
@@ -53,5 +82,11 @@
 		line-height: (79 / 48)  
 		background: url(../img/count.png) no-repeat center 
 		background-size: contain
+		+r(900)
+			font-size: 40px
 		+ .counter-list__item
 			margin-left: (5 / 182) * 100 * "1%"
+			+r(900)
+				margin-left: 2px
+		+r(500)
+			font-size: 42px

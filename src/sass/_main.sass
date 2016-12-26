@@ -2,22 +2,27 @@
 	background: url(../img/section1/bg-sec1.jpg) no-repeat center
 	overflow: hidden
 	.inner
-		// min-height: 1010px
 		padding-top: 44px
 		padding-bottom: 194px
 		z-index: 1
 		position: relative
+		+r(900)
+			padding: 74px 15px 194px
+			max-width: 630px
+		+r(500)
+			padding: 70px 15px
 		&:before
-			content: ''
-			display: block
-			position: absolute
-			width: ((723 / 1170) * 100) * "1%" 
-			height: ((488 / 1170) * 100) * "1%" 
-			left: ((109 / 1170) * 100) * "1%" // 109px
-			bottom: ((-20 / 1170) * 100) * "1%" 
-			background: url(../img/section1/product-main__shadow.png) no-repeat center
-			opacity: 0.49
-			z-index: -1
+			+rmin(901)
+				content: ''
+				display: block
+				position: absolute
+				width: ((723 / 1170) * 100) * "1%" 
+				height: ((488 / 1170) * 100) * "1%" 
+				left: ((109 / 1170) * 100) * "1%" // 109px
+				bottom: ((-20 / 1170) * 100) * "1%" 
+				background: url(../img/section1/product-main__shadow.png) no-repeat center
+				opacity: 0.49
+				z-index: -1
 .prices
 	+hide-text
 	display: inline-block
@@ -34,15 +39,28 @@
 	vertical-align: bottom
 	margin: 0 0 12px 10px
 .content
-	width: ((475 / 1140) * 100) * "1%" 
-	float: right
+	+rmin(901)
+		width: ((475 / 1140) * 100) * "1%" 
+		float: right
+	&__top
+		+r(900)
+			margin-bottom: 70px
 	&__body
-		max-width: 420px
-		padding-left: 15px
+		+rmin(901)
+			max-width: 420px
+			padding-left: 15px
+		+r(900)
+			max-width: 345px
+			float: right
+			.btn-primary
+				display: none
+		+r(500)
+			max-width: none
+			float: none
 .section2
 	background: url(../img/section2/bg-sec2.png) no-repeat center top
 	overflow: hidden
-	margin-top: -84px
+	margin-top: -86px
 	z-index: 10
 	+r(1100)
 		margin-top: -100px

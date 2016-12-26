@@ -3,7 +3,8 @@
 	vertical-align: top
 	text-align: center
 	cursor: pointer
-	text-decoration: none 
+	text-decoration: none
+	color: #fff
 .btn-primary
 	padding: 5.1% 7%
 	width: 100%
@@ -52,3 +53,15 @@
 	&:hover
 		background-color: #FF7200
 		color: #fafafc
+.button-wrap
+	text-align: center
+	display: none
+	+r(900)
+		display: block
+.btn-mobile
+	padding: 20px 24px 
+	box-shadow: 0 12px 18px rgba(0, 0, 0, 0.32)
+	border-radius: 13px
+	border: 6px solid #ffe363
+	background-color: #ffd200
+	+f(evo, 18, 1, null)
