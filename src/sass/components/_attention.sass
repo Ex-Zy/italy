@@ -1,11 +1,10 @@
 .attention
 	+evo
 	line-height: 1
-	max-width: 1063px
 	margin: auto
 	padding-top: 15px
-	padding-left: 426px
-	min-height: 315px
+	padding-left: (474 / 1140) * 100 * "1%"
+	padding-bottom: 57px 
 	position: relative
 	&__pic
 		width: 337px
@@ -25,16 +24,21 @@
 	&__title
 		+fluid-font(38px, 48px, 900px, 1140px, 48px)
 		color: #2e2e2e
-		margin-bottom: 32px
 		span
 			+fluid-font(30px, 36px, 900px, 1140px, 36px)
 			display: block
 	&__subtitle
 		+fluid-font(24px, 30px, 900px, 1140px, 30px)
+		color: #ff7200
+		margin-top: 32px
 		span
 			+fluid-font(49px, 72px, 900px, 1140px, 72px)
-			color: #ff7200
 			display: block
 			position: relative
-			margin-left: -43px
-			margin-bottom: 10px
+			margin-bottom: 25px
+			+rmin(1171)
+				margin-left: -43px
+		&_font
+			span
+				+fluid-font(26px, 32px, 900px, 1140px, 32px)
+				margin: 62px 0 0 -32px

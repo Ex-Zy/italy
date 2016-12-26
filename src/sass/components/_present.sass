@@ -1,5 +1,4 @@
 .present
-	padding-top: 155px
 	+clr
 	&__title
 		color: #fff
@@ -14,10 +13,21 @@
 			margin-top: 24px
 			display: block
 	&__col1
-		width: 40%
+		width: 45%
 		float: left
-		padding-right: 62px
+		padding-left: (67 / 1140) * 100 * "1%"
+		padding-top: 46px
+		.advantage
+			margin: 0
+		.counter
+			margin: 46px 0 0
+	&__col1-inner
+		max-width: 390px
 	&__col2
-		width: 60%
+		width: 25%
+		// padding-right: 50px
 		float: left
+		position: relative
+	&__col3
+		overflow: hidden
 		position: relative

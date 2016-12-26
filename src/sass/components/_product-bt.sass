@@ -1,13 +1,14 @@
 .product-bt
 	position: relative
-	display: inline-block
-	vertical-align: top
-	margin-right: (63 / 684) * 100 * "1%"
-	width: (238 / 684) * 100 * "1%"
+	width: (238 / 344) * 100 * "1%"
 	min-width: 205px 
+	+r(1170)
+		width: 95%
+		margin: auto
 	&__text
-		+f(bebas-bold, 30, 1, null)
-		color: #fff
+		+bebas-bold
+		line-height: 1
+		+fluid-font(26px, 30px, 900px, 1100px, 30px)
 		max-width: 96px
 	&__text,
 	&__price-old,
@@ -16,7 +17,9 @@
 		vertical-align: bottom
 		position: relative
 	&__price-current
-		+f(bebas-bold, 48, 1, null)
+		+bebas-bold
+		line-height: 1
+		+fluid-font(42px, 48px, 900px, 1100px, 48px)
 		top: -30px
 		&:after
 			content: ''
@@ -29,6 +32,10 @@
 			margin: auto
 			height: 0
 			border-bottom: 2px solid #fff
+	&__price-old
+		+r(1100)
+			img
+				width: 80%
 	&__text
 		top: -35px
 	&__pic
@@ -51,6 +58,6 @@
 		position: absolute
 		right: 20px
 		bottom: 0
-		margin-bottom: -50px
+		margin-bottom: -94px
 		width: 280px
 		z-index: 1

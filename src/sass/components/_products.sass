@@ -12,7 +12,7 @@
 		text-align: center
 	&__list
 		+clr
-		padding: 100px 0
+		margin: 100px 0 0
 	&__item
 		float: left
 		width: 33.3333%
@@ -43,18 +43,24 @@
 			&:after
 				background: url(../img/section3/product1__shadow.png) no-repeat center
 				opacity: 0.66
+			.products__badge
+				left: (71 / 380) * 100 * "1%" 
 		&:nth-of-type(2)
 			&:before
 				background: url(../img/section3/product2__bg.png) no-repeat center
 				opacity: 0.4
 			&:after
 				background: url(../img/section3/product2__shadow.png) no-repeat center
+			.products__badge
+				left: (-5 / 380) * 100 * "1%" 
 		&:nth-of-type(3)
 			&:before
 				background: url(../img/section3/product3__bg.png) no-repeat center
 				opacity: 0.6
 			&:after
 				background: url(../img/section3/product3__shadow.png) no-repeat center
+			.products__badge
+				left: (-43 / 380) * 100 * "1%" 
 	&__item-pic
 		background-repeat: no-repeat
 		background-position: center center
@@ -72,12 +78,13 @@
 		margin: 0 auto -26.31578947368421% // 100 / 380
 		font-size: 0
 	&__item-footer
-		margin-top: 90px
+		margin-top: 98px
 	&__item-discount
 		display: inline-block
 		vertical-align: middle
 		+bebas-bold
 		line-height: 1
+		text-align: left
 		+fluid-font(36px, 48px, 900px, 1140px, 48px) 
 		width: 50%
 		span
@@ -91,7 +98,7 @@
 		width: 50%
 		+clr
 		img
-			width: auto
+			width: 80%
 			max-width: 100%
 			float: right
 	&__badge
@@ -104,7 +111,7 @@
 		position: absolute
 		left: 0
 		bottom: 100%
-		margin-bottom: -10px
+		margin-bottom: -20px
 	&__total
 		+fluid-font(20px, 24px, 900px, 1140px, 24px)
 		margin-top: 10px
