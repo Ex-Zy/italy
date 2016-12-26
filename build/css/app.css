@@ -606,6 +606,8 @@ img { width: 100%; height: auto; display: block; }
 
  .content__body { max-width: none; float: none; }
 
+ .section2:before, .section2:after { display: none; }
+
  .counter { white-space: normal; margin-bottom: 0; }
 
  .counter__col1 { width: 100%; }
