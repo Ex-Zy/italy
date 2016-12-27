@@ -5,27 +5,33 @@
 	&__item
 		position: relative
 		clear: both
+		+r(900)
+			width: 100% !important
 	&__pic
-		position: absolute
-		max-width: 253px
-		top: 0
-		z-index: 1
-		&:before
-			content: ''
-			display: block
+		+rmin(901)
+			max-width: 253px
 			position: absolute
-			z-index: -1
-			background: url(../img/section5/mobile__shadow.png) no-repeat center
-			width: (741 / 253) * 100 * "1%"
-			padding-top:  (571 / 253) * 100 * "1%"
-			opacity: 0.67
-		&:after
-			content: ''
-			display: block
-		img
-			width: 100%
-			display: block
-			position: absolute
+			top: 0
+			z-index: 1
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				z-index: -1
+				background: url(../img/section5/mobile__shadow.png) no-repeat center
+				width: (741 / 253) * 100 * "1%"
+				padding-top:  (571 / 253) * 100 * "1%"
+				opacity: 0.67
+			&:after
+				content: ''
+				display: block
+			img
+				width: 100%
+				display: block
+				position: absolute
+		+r(900)
+			margin: auto
+			max-width: 253px
 	&__desc
 		position: relative
 		line-height: 1.2
@@ -45,47 +51,49 @@
 		color: #fff
 		+fluid-font(22px, 26px, 900px, 1140px, 26px)
 	&__item_left
-		float: left
-		padding-top: 23px
-		padding-right: 20px
-		padding-bottom: 200px
-		padding-left: ((308 / 1093) * 100) * "1%" 
-		width: ((806 / 1093) * 100) * "1%"
-		.comments__desc
-			&:before
-				background: url(../img/section5/arrow-title-left.png) no-repeat center
-				top: -27px
-				left: -24px
-		.comments__pic
-			left: 0
-			width: ((253 / 806) * 100) * "1%"
-			&:before
-				top: (227 / 516) * 100 * "1%" 
-				right: (-237 / 253) * 100 * "1%"  
-				left: (-251 / 253) * 100 * "1%"  
-			&:after
-				padding-top: ((517 / 253) * 100) * "1%" 
+		+rmin(901)
+			float: left
+			padding-top: 23px
+			padding-right: 20px
+			padding-bottom: 200px
+			padding-left: ((308 / 1093) * 100) * "1%" 
+			width: ((806 / 1093) * 100) * "1%"
+			.comments__desc
+				&:before
+					background: url(../img/section5/arrow-title-left.png) no-repeat center
+					top: -27px
+					left: -24px
+			.comments__pic
+				left: 0
+				width: ((253 / 806) * 100) * "1%"
+				&:before
+					top: (227 / 516) * 100 * "1%" 
+					right: (-237 / 253) * 100 * "1%"  
+					left: (-251 / 253) * 100 * "1%"  
+				&:after
+					padding-top: ((517 / 253) * 100) * "1%" 
 	&__item_right
-		float: right
-		text-align: right
-		margin-top: -271px
-		width: ((798 / 1093) * 100) * "1%"
-		padding-top: 150px
-		padding-right: ((276 / 1093) * 100) * "1%"
-		padding-bottom: 100px
-		padding-left: 49px
-		.comments__desc
-			text-align: left
-			&:before
-				background: url(../img/section5/arrow-title-right.png) no-repeat center
-				top: -41px
-				right: -13px
-		.comments__pic
-			right: 0
-			width: ((253 / 798) * 100) * "1%"
-			&:before
-				top: (216 / 516) * 100 * "1%" 
-				right: (-253 / 253) * 100 * "1%"  
-				left: (-235 / 253) * 100 * "1%" 
-			&:after
-				padding-top: ((517 / 253) * 100) * "1%" 
+		+rmin(901)
+			float: right
+			text-align: right
+			margin-top: -271px
+			width: ((798 / 1093) * 100) * "1%"
+			padding-top: 150px
+			padding-right: ((276 / 1093) * 100) * "1%"
+			padding-bottom: 100px
+			padding-left: 49px
+			.comments__desc
+				text-align: left
+				&:before
+					background: url(../img/section5/arrow-title-right.png) no-repeat center
+					top: -41px
+					right: -13px
+			.comments__pic
+				right: 0
+				width: ((253 / 798) * 100) * "1%"
+				&:before
+					top: (216 / 516) * 100 * "1%" 
+					right: (-253 / 253) * 100 * "1%"  
+					left: (-235 / 253) * 100 * "1%" 
+				&:after
+					padding-top: ((517 / 253) * 100) * "1%" 

@@ -5,6 +5,8 @@
 	+r(1170)
 		width: 95%
 		margin: auto
+	+r(900)
+		max-width: 238px
 	&__text
 		+bebas-bold
 		line-height: 1
@@ -36,6 +38,10 @@
 		+r(1100)
 			img
 				width: 80%
+		+r(900)
+			width: 100px
+			img
+				width: 100%
 	&__text
 		top: -35px
 	&__pic
@@ -54,6 +60,13 @@
 			right: -375px
 			margin-bottom: -98px
 			opacity: 0.65
+		img
+			+r(900)
+				width: auto
+				max-width: 100%
+			+r(650)
+				max-width: 80%
+				margin: auto
 	&__footer
 		position: absolute
 		right: 20px
@@ -61,3 +74,7 @@
 		margin-bottom: -94px
 		width: 280px
 		z-index: 1
+		+r(900)
+			margin-bottom: -50px
+			left: 0
+			right: 0

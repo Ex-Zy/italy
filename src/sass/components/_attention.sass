@@ -6,6 +6,8 @@
 	padding-left: (474 / 1140) * 100 * "1%"
 	padding-bottom: 57px 
 	position: relative
+	+r(900)
+		padding: 0
 	&__pic
 		width: 337px
 		height: 315px
@@ -13,6 +15,8 @@
 		position: absolute
 		top: 0
 		left: 44px
+		+r(900)
+			display: none
 		img
 			position: absolute
 			top: ((-28 / 337) * 100) * "1%"
@@ -24,13 +28,26 @@
 	&__title
 		+fluid-font(38px, 48px, 900px, 1140px, 48px)
 		color: #2e2e2e
+		+r(900)
+			font-size: 48px
+			text-align: center
+			line-height: 1.2
+			letter-spacing: -0.02em
+		+r(500)
+			font-size: 26px
 		span
 			+fluid-font(30px, 36px, 900px, 1140px, 36px)
 			display: block
+			+r(900)
+				font-size: 48px
+			+r(500)
+				font-size: 26px
 	&__subtitle
 		+fluid-font(24px, 30px, 900px, 1140px, 30px)
 		color: #ff7200
 		margin-top: 32px
+		+r(900)
+			display: none
 		span
 			+fluid-font(49px, 72px, 900px, 1140px, 72px)
 			display: block

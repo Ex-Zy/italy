@@ -109,11 +109,18 @@
 		padding-top: 119px
 		padding-bottom: 92px 
 		z-index: 2
+		+r(900)
+			padding-top: 64px
+			padding-bottom: 64px
 .section5
 	margin-top: -235px
 	background: url(../img/section5/bg-sec5.png) no-repeat center bottom
 	overflow: hidden
 	z-index: 1
+	+r(900)
+		margin-top: 0
+		background: url(../img/section5/bg-sec5.png) no-repeat 50% -180%
+		background-size: cover
 	.inner
 		padding-top: 277px
 		padding-bottom: 134px 
@@ -121,10 +128,34 @@
 	margin-top: -91px
 	background: url(../img/section6/bg-sec6.jpg) no-repeat center
 	overflow: hidden
+	+r(900)
+		background: #ff598a
+		z-index: 1
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			margin: auto
+			z-index: -1
+			background: url(../img/section6/bg-sec6-tablets_small.png) no-repeat center
+			width: 768px
+			height: 833px
+	+r(650)
+		&:before
+			display: none
 	.inner
 		z-index: 1
 		padding-top: 166px
 		padding-bottom: 292px
+		+r(900)
+			padding-top: 80px
+			padding-bottom: 180px
+		+r(500)
+			padding-bottom: 100px
 .section
 	position: relative
 	background-size: cover

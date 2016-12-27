@@ -13,12 +13,16 @@
 	&__list
 		+clr
 		margin: 100px 0 0
+		+r(900)
+			margin: 0
 	&__item
 		float: left
 		width: 33.3333%
 		text-align: center
 		position: relative
 		z-index: 1
+		+r(900)
+			padding: 90px 0 0
 		&:before,
 		&:after
 			content: ''
@@ -32,33 +36,40 @@
 			margin: auto
 			top: 0
 			bottom: 0
+			+r(900)
+				background: url(../img/section3/product3__bg.png) no-repeat center
+				opacity: 0.4
+				+gpu
 		&:after
 			height: 226px
 			top: 287px
 			margin: auto
 		&:nth-of-type(1)
-			&:before
-				background: url(../img/section3/product1__bg.png) no-repeat center
-				opacity: 0.2
-			&:after
-				background: url(../img/section3/product1__shadow.png) no-repeat center
-				opacity: 0.66
+			+rmin(901)
+				&:before
+					background: url(../img/section3/product1__bg.png) no-repeat center
+					opacity: 0.2
+				&:after
+					background: url(../img/section3/product1__shadow.png) no-repeat center
+					opacity: 0.66
 			.products__badge
 				left: (71 / 380) * 100 * "1%" 
 		&:nth-of-type(2)
-			&:before
-				background: url(../img/section3/product2__bg.png) no-repeat center
-				opacity: 0.4
-			&:after
-				background: url(../img/section3/product2__shadow.png) no-repeat center
+			+rmin(901)
+				&:before
+					background: url(../img/section3/product2__bg.png) no-repeat center
+					opacity: 0.4
+				&:after
+					background: url(../img/section3/product2__shadow.png) no-repeat center
 			.products__badge
 				left: (-5 / 380) * 100 * "1%" 
 		&:nth-of-type(3)
-			&:before
-				background: url(../img/section3/product3__bg.png) no-repeat center
-				opacity: 0.6
-			&:after
-				background: url(../img/section3/product3__shadow.png) no-repeat center
+			+rmin(901)
+				&:before
+					background: url(../img/section3/product3__bg.png) no-repeat center
+					opacity: 0.6
+				&:after
+					background: url(../img/section3/product3__shadow.png) no-repeat center
 			.products__badge
 				left: (-43 / 380) * 100 * "1%" 
 	&__item-pic
@@ -66,10 +77,16 @@
 		background-position: center center
 		background-size: contain
 		position: relative
-		&:before
-			content: ''
-			display: block
-			padding-top: (400 / 380) * 100 * "1%" 
+		+r(900)
+			max-width: 238px
+			height: 400px
+			margin: auto
+			background-size: cover
+		+rmin(901)
+			&:before
+				content: ''
+				display: block
+				padding-top: (400 / 380) * 100 * "1%" 
 	&__item-body
 		position: absolute
 		left: 0
@@ -79,6 +96,8 @@
 		font-size: 0
 	&__item-footer
 		margin-top: 98px
+		+r(900)
+			margin-top: 76px
 	&__item-discount
 		display: inline-block
 		vertical-align: middle
@@ -101,6 +120,8 @@
 			width: 80%
 			max-width: 100%
 			float: right
+			+r(900)
+				width: 100%
 	&__badge
 		max-width: 170px
 		width: 100%

@@ -5,6 +5,9 @@
 	cursor: pointer
 	text-decoration: none
 	color: #fff
+	position: relative
+	&:active
+		top: 2px
 .btn-primary
 	padding: 5.1% 7%
 	width: 100%
@@ -22,13 +25,14 @@
 		color: #514718
 		transition: color 0.3s
 		+fluid-font(26px, 36px, 900px, 1140px, 36px)
-	&:hover
-		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11)
-		border-color: #ffffff
-		background-color: transparent
-		span
-			color: #fff
-			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.11)
+	+rmin(901)
+		&:hover
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11)
+			border-color: #ffffff
+			background-color: transparent
+			span
+				color: #fff
+				text-shadow: 0 1px 1px rgba(0, 0, 0, 0.11)
 .btn-secondary
 	padding: 7px 67px
 	line-height: 1.37
@@ -38,9 +42,10 @@
 	+bebas-bold
 	+fluid-font(24px, 30px, 900px, 1140px, 30px)
 	transition: background-color 0.3s, border-color 0.3s
-	&:hover
-		background-color: #fcd000
-		border-color: #fcd000
+	+rmin(901)
+		&:hover
+			background-color: #fcd000
+			border-color: #fcd000
 .btn
 	padding: 14px 126px 
 	background-color: #fff
@@ -50,18 +55,22 @@
 	+bebas-bold
 	+fluid-font(26px, 36px, 900px, 1140px, 36px)
 	transition: background-color 0.3s, color 0.3s
-	&:hover
-		background-color: #FF7200
-		color: #fafafc
+	+rmin(901)
+		&:hover
+			background-color: #FF7200
+			color: #fafafc
 .button-wrap
 	text-align: center
 	display: none
 	+r(900)
 		display: block
 .btn-mobile
-	padding: 20px 24px 
-	box-shadow: 0 12px 18px rgba(0, 0, 0, 0.32)
-	border-radius: 13px
-	border: 6px solid #ffe363
-	background-color: #ffd200
-	+f(evo, 18, 1, null)
+	+r(900)
+		padding: 20px 24px 
+		box-shadow: 0 12px 18px rgba(0, 0, 0, 0.32)
+		border-radius: 13px
+		border: 6px solid #ffe363
+		background-color: #ffd200
+		+f(evo, 18, 1, null)
+		color: #fff
+	

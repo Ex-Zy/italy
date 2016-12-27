@@ -12,11 +12,24 @@
 			+fluid-font(56px, 72px, 900px, 1140px, 72px)
 			margin-top: 24px
 			display: block
+			+r(900)
+				font-size: 72px
+				margin-top: 0
+			+r(500)
+				font-size: 36px
+		+r(900)
+			font-size: 48px
+			line-height: 1.2
+		+r(500)
+			font-size: 26px
+			margin: 0 auto 40px
 	&__col1
 		width: 45%
 		float: left
 		padding-left: (67 / 1140) * 100 * "1%"
 		padding-top: 46px
+		+r(900)
+			display: none
 		.advantage
 			margin: 0
 		.counter
@@ -25,9 +38,18 @@
 		max-width: 390px
 	&__col2
 		width: 25%
-		// padding-right: 50px
 		float: left
 		position: relative
+		+r(900)
+			width: 50%
+		+r(650)
+			float: none
+			width: 100%
 	&__col3
 		overflow: hidden
 		position: relative
+		+r(900)
+			padding-top: 36px
+		+r(650)
+			overflow: visible
+			margin-top: 70px

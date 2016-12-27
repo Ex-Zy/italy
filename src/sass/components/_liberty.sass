@@ -2,6 +2,8 @@
 	position: relative
 	font-size: 0
 	margin-top: -18px
+	+r(900)
+		margin-top: 50px
 	&:before
 		content: ""
 		display: block
@@ -12,8 +14,12 @@
 		height: 154px
 		background: url(../img/section4/line.png) no-repeat center
 		background-size: contain 
+		+r(900)
+			display: none
 	&__list
 		padding: 112px 24px 0
+		+r(900)
+			padding: 0
 	&__item
 		display: inline-block
 		vertical-align: top
@@ -22,24 +28,45 @@
 		padding-left: 26px
 		padding-right: 10px
 		position: relative
+		+clr
+		+r(900)
+			display: table
+			width: 100%
+			padding: 0
+			margin: 0
+			&:not(:last-of-type)
+				margin-bottom: 30px
 	&__pic
 		float: left
 		width: 26.74897119341564%
 		min-width: 115px
 		overflow: hidden
 		position: relative
+		+r(900)
+			width: 115px
+			height: 115px
+			min-width: auto
+			float: none
+			display: table-cell
+			vertical-align: middle
+		+r(500)
+			width: 90px
+			height: 90px
+			vertical-align: top
 		&:after
-			content: ''
-			display: block
-			padding-top: 100%
+			+rmin(901)
+				content: ''
+				display: block
+				padding-top: 100%
 		img
-			max-width: 100%
-			width: auto
-			top: 50%
-			left: 50%
-			margin-top: -50%
-			margin-left: -50%
-			position: absolute
+			+rmin(901)
+				max-width: 100%
+				width: auto
+				top: 50%
+				left: 50%
+				margin-top: -50%
+				margin-left: -50%
+				position: absolute
 	&__content
 		color: #2e2e2e
 		+fluid-font(24px, 30px, 900px, 1140px, 30px)
@@ -47,6 +74,15 @@
 		padding: 10px 0 10px 5.349794238683128%
 		letter-spacing: -0.01em
 		overflow: hidden
+		+r(900)
+			display: table-cell
+			vertical-align: middle
+			padding: 0 0 0 36px
+			font-size: 30px
+		+r(500)
+			font-size: 22px
+			padding: 0 0 0 15px
+			vertical-align: top
 	&__desc
 		color: #959595
 		+fluid-font(22px, 26px, 900px, 1140px, 26px)
@@ -54,6 +90,10 @@
 		margin-top: -6px
 		line-height: 1.2 
 		padding: 0 32px
+		+r(900)
+			display: none
 	.btn
 		display: table
 		margin: 60px auto 0
+		+r(900)
+			padding: 20px 88px 
