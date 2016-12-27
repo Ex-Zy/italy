@@ -4,9 +4,8 @@
 	+clr
 	&__item
 		position: relative
-		clear: both
 		+r(900)
-			width: 100% !important
+			text-align: center
 	&__pic
 		+rmin(901)
 			max-width: 253px
@@ -30,11 +29,17 @@
 				display: block
 				position: absolute
 		+r(900)
-			margin: auto
+			margin: 0 auto 30px
 			max-width: 253px
+		+r(500)
+			img
+				width: 80%
+				margin: auto
 	&__desc
 		position: relative
 		line-height: 1.2
+		+r(900)
+			user-select: auto
 		&:before
 			content: ''
 			display: block

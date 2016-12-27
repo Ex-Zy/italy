@@ -243,7 +243,7 @@ img { width: 100%; height: auto; display: block; }
 
 .comments:after { content: " "; display: table; clear: both; }
 
-.comments__item { position: relative; clear: both; }
+.comments__item { position: relative; }
 
 .comments__desc { position: relative; line-height: 1.2; }
 
@@ -508,9 +508,11 @@ img { width: 100%; height: auto; display: block; }
  .section2:before{ left: -50%; -webkit-transform: skewX(85deg); -ms-transform: skewX(85deg); transform: skewX(85deg); }
  .section2:after{ right: -50%; -webkit-transform: skewX(-85deg); -ms-transform: skewX(-85deg); transform: skewX(-85deg); }
  .section2 .inner{ padding-top: 60px; padding-bottom: 60px; }
- .section4 .inner{ padding-top: 64px; padding-bottom: 64px; }
- .section5{ margin-top: 0; background: url(../img/section5/bg-sec5.png) no-repeat 50% -180%; background-size: cover; }
- .section6{ background: #ff598a; z-index: 1; }
+ .section3{ z-index: 10; }
+ .section4 .inner{ padding-top: 64px; padding-bottom: 64px; z-index: 3; }
+ .section5{ z-index: 2; }
+ .section5 .inner{ padding-top: 330px; padding-bottom: 100px; }
+ .section6{ background: #ff598a; z-index: 1; margin-top: -40px; }
  .section6:before{ content: ''; display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; z-index: -1; background: url(../img/section6/bg-sec6-tablets_small.png) no-repeat center; width: 768px; height: 833px; }
  .section6 .inner{ padding-top: 80px; padding-bottom: 180px; }
  .button-wrap{ display: block; }
@@ -558,8 +560,9 @@ img { width: 100%; height: auto; display: block; }
  .liberty__content{ display: table-cell; vertical-align: middle; padding: 0 0 0 36px; font-size: 30px; }
  .liberty__desc{ display: none; }
  .liberty .btn{ padding: 20px 88px; }
- .comments__item{ width: 100% !important; }
- .comments__pic{ margin: auto; max-width: 253px; }
+ .comments__item{ text-align: center; }
+ .comments__pic{ margin: 0 auto 30px; max-width: 253px; }
+ .comments__desc{ -webkit-user-select: auto; -moz-user-select: auto; -ms-user-select: auto; user-select: auto; }
  .present__title span{ font-size: 72px; margin-top: 0; }
  .present__title{ font-size: 48px; line-height: 1.2; }
  .present__col1{ display: none; }
@@ -606,6 +609,7 @@ img { width: 100%; height: auto; display: block; }
  .attention__title span{ font-size: 26px; }
  .liberty__pic{ width: 90px; height: 90px; vertical-align: top; }
  .liberty__content{ font-size: 22px; padding: 0 0 0 15px; vertical-align: top; }
+ .comments__pic img{ width: 80%; margin: auto; }
  .present__title span{ font-size: 36px; }
  .present__title{ font-size: 26px; margin: 0 auto 40px; } }
 
