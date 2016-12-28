@@ -1,6 +1,6 @@
 $icons: (0:0)
-$icons: map-merge($icons,('arrow-left': (X: 0px, Y:0px, W: 34px, H: 64px, TW: 78px, TH: 64px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('arrow-right': (X: -44px, Y:0px, W: 34px, H: 64px, TW: 78px, TH: 64px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-next': (X: 0px, Y:0px, W: 34px, H: 64px, TW: 78px, TH: 64px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-prev': (X: -44px, Y:0px, W: 34px, H: 64px, TW: 78px, TH: 64px, IMG: '../img/sprite.png')))
 
 
 // Gets an attribute from the sass map
@@ -37,15 +37,14 @@ $icons: map-merge($icons,('arrow-right': (X: -44px, Y:0px, W: 34px, H: 64px, TW:
   +sprite-retina($i)  
 
 //
-//.icon-arrow-left
-//  width: 34px
-//  height: 64px
-//  background-image: url('../img/sprite.png')
-//  background-position: 0px 0px
-//
-//.icon-arrow-right
-//  width: 34px
-//  height: 64px
-//  background-image: url('../img/sprite.png')
-//  background-position: -44px 0px
-//
+.icon-arrow-next
+ width: 34px
+ height: 64px
+ background-image: url('../img/sprite.png')
+ background-position: 0px 0px
+
+.icon-arrow-prev
+ width: 34px
+ height: 64px
+ background-image: url('../img/sprite.png')
+ background-position: -44px 0px

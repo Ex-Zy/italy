@@ -1,12 +1,8 @@
 var slider1 = $('.js-slider-1');
 var slider2 = $('.js-slider-2');
+var scrollWidth = getScrollWidth();
 
 function initSlider(slider, options) {
-	slider.on('init', function() {
-		setTimeout(function() {
-			slider.addClass('is-ready');
-		}, 200);
-	});
 	slider.not('.slick-initialized').slick(options);
 }
 
@@ -17,24 +13,37 @@ function destroySlider(slider) {
 }
 
 function showSlider() {
-	var tablet = $(window).width() <= 900;
+	var tablet = ($(window).width() + scrollWidth) <= 900;
 
 	if(tablet) {
 		initSlider(slider1, {
-			speed: 1500,
-			prevArrow: '.js-slider-1-prev',
-			nextArrow: '.js-slider-1-next'
+			infinite: false,
+			speed: 1000,
+			prevArrow: '.js-prev-1',
+			nextArrow: '.js-next-1'
 		});
 		initSlider(slider2, {
-			slideToShow: 1,
-			speed: 1500,
-			prevArrow: '.js-slider-2-prev',
-			nextArrow: '.js-slider-2-next'
+			infinite: false,
+			speed: 1000,
+			prevArrow: '.js-prev-2',
+			nextArrow: '.js-next-2'
 		});
 	} else {
 		destroySlider(slider1);
 		destroySlider(slider2);
 	}
+}
+
+function getScrollWidth() {
+    var block = $('<div>').css({'height':'50px','width':'50px'}),
+        indicator = $('<div>').css({'height':'200px'});
+
+    $('body').append(block.append(indicator));
+    var w1 = $('div', block).innerWidth();    
+    block.css('overflow-y', 'scroll');
+    var w2 = $('div', block).innerWidth();
+    $(block).remove();
+    return (w1 - w2);
 }
 
 showSlider();
