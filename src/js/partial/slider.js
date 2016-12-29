@@ -1,3 +1,4 @@
+//sliders
 var slider1 = $('.js-slider-1');
 var slider2 = $('.js-slider-2');
 var scrollWidth = getScrollWidth();
